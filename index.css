@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* css variables */
+  --primaryColor: #de6600;
+  --secondaryColor: #003f5a;
+  --mainFont: 'Lato', 'sans-serif';
+  --text-colour: #121314;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px;
+  font-family: var(--mainFont);
+  color: var(--text-colour);
+}
+
+.navigation-list_items {
+  display: flex;
+}
+
+.logo{
+  color: var(--primaryColor);
+  text-decoration: none;
+}
+
+.todo-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.todo-section_heading{
+  margin: 50px;
+  color: var(--secondaryColor);
+}
+
+.todo__section-todoItem {
+  display: flex;
+  min-width: 300px;
+}
+
+.todo__section-todoItem + .todo__section-todoItem {
+  margin-top: 20px;
+}
+
+.todo__section-todoItem > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.todo__section-todoItem  .todo-text {
+    display: inline-block;
+    margin-right: 100px;
+    margin-left: 10px;
+    font-family: var(--fontPrimary);
+}
+
+.todo-checkbox{
+  width: 20px;
+  height: 20px;
+  border-radius: 8px;
+
+}
+
+
+.todo_actions {
+    padding: 5px 16px;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid transparent;
+}
+
+.edit-btn {
+    background-color: var(--primaryColor);
+}
+
+.delete-btn {
+    background-color: var(--secondaryColor);
+    color: white;
+}
+.done-btn{
+  background-color: var(--primaryColor);
+  padding: 5px 16px;
+  border-radius: 8px;
+  color: white;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid transparent;
+  margin-left: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 500px;
+}
+
+.form_input {
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid var(--text-colour);
+    padding-right: 16px;
+    padding-left: 16px;
+    font-size: 16px;
+    font-family: var(--fontPrimary);
+    margin-bottom: 20px;
+}
+
+.add-btn {
+    padding: 10px 16px;
+    background-color: var(--primaryColor);
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+
+
