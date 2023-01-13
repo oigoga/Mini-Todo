@@ -124,6 +124,28 @@
     margin-bottom: 15px;
 }
 
-
-
-
+@media (max-width: 500px){
+  .form{
+  width: 50%;
+  }
+  .todo__list {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 75%;
+    padding: 20px;
+  }
+ .edit-btn{
+  width: 50px;
+  padding: 2px;
+ }
+ .delete-btn{
+  width: 50px;
+  padding: 2px;
+  
+ }
+ .done-btn{
+  width: 50px;
+  padding: 2px;
+  margin-left: 0;
+ }
+}
