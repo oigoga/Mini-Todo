@@ -31,9 +31,14 @@
                 <!-- This is where our todo should be  -->
             </ul>
             <form action="" class="form" id="form">
-                <input required type="text" class="form_input" id="todo__input">
+                <input required type="text" class="form_input" id="todo__input" placeholder="Add todo here">
+               <div class="date-time">
+                <input required type="date" class="form_input" id="todo__date" placeholder="Add due date here">
+                <input required type="time" class="form_input" id="todo__time" placeholder="Due time ">
+               </div>
                 <button type="submit" class="todo_actions add-btn">Add</button>
                 <button id="Clear" type="button" class="todo_actions add-btn margin">Clear</button>
+                
             </form>
         </section>
     </main>
