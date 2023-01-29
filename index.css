@@ -5,10 +5,14 @@
 
 :root {
   /* css variables */
-  --primaryColor: #de6600;
-  --secondaryColor: #003f5a;
+  --primaryColor: #ff5722;
+  --secondaryColor: #8c7851;
   --mainFont: 'Lato', 'sans-serif';
   --text-colour: #121314;
+}
+
+body{
+  background-color: #f9f4ef;
 }
 
 .navigation-list {
@@ -66,8 +70,20 @@
 .todo-checkbox{
   width: 20px;
   height: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
+  
 
+}
+.todo{
+  display: flex;
+  justify-content: space-around;
+}
+.todo-text-area{
+  
+}
+
+.todo-checkbox:checked {
+  background-color:#8c7851  ;
 }
 
 

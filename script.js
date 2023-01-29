@@ -15,7 +15,7 @@ function deleteTodo(eventObject) {
   
   let editButtonClicked = eventObject.target
 let li = editButtonClicked.parentNode.parentNode.parentNode
-let deletebtn = li.childNodes[1].childNodes[5]
+let deletebtn = li.childNodes[1].childNodes[4]
 let child = li.childNodes[1].childNodes[3].innerHTML
 inputField.value = child
 let newbtn = document.createElement("button")
@@ -55,14 +55,18 @@ function showTodoOnTheScreen(todo) {
   const li = document.createElement("li");
   li.classList.add("todo__section-todoItem");
 
-  li.innerHTML = ` <div>
-  <input type="checkbox" class="todo-checkbox">
-  <span class="todo-text"> ${todo} </span>
-  <div class="todo_actions-wrapper">
-      <button  class="todo_actions edit-btn" id="edit_btn">edit</button>
-      <button  class="todo_actions delete-btn" id="delete_btn">delete</button>
+  li.innerHTML = `
+  <div class= "div-main-wrapper">
+      <input class="todo-checkbox" type="checkbox" />
+      <span class="todo-text"> ${todo} </span>
+      <div class="todo_actions-wrapper">
+          <button id="edit_btn" class="todo_actions edit-btn">edit</button>
+          <button id="delete_btn" class="todo_actions delete-btn">delete</button>
+      </div>
   </div>
-</div>`;
+  `;
+
+
 
   listOfTodo.appendChild(li);
   selectButtons();
